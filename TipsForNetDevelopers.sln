@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StartConsoleApp", "StartConsoleApp\StartConsoleApp.csproj", "{4F32EB6A-5611-4C8B-90E5-3ABCA6165A56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenchMark.ConsoleApp", "BenchMark.ConsoleApp\BenchMark.ConsoleApp.csproj", "{40FFCA51-4E65-4D7F-A840-A74B6761849B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BenchMark", "BenchMark.ConsoleApp\BenchMark.csproj", "{40FFCA51-4E65-4D7F-A840-A74B6761849B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsNoTracking", "AsNoTracking\AsNoTracking.csproj", "{3AB1A6E1-CF6D-422A-9E7B-43DC639A50B0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsNoTracking", "AsNoTracking\AsNoTracking.csproj", "{3AB1A6E1-CF6D-422A-9E7B-43DC639A50B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingleOrUnique", "SingleOrUnique\SingleOrUnique.csproj", "{729F286D-32A1-45D0-AAC6-731DE6A7B4A6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3AB1A6E1-CF6D-422A-9E7B-43DC639A50B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AB1A6E1-CF6D-422A-9E7B-43DC639A50B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AB1A6E1-CF6D-422A-9E7B-43DC639A50B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{729F286D-32A1-45D0-AAC6-731DE6A7B4A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{729F286D-32A1-45D0-AAC6-731DE6A7B4A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{729F286D-32A1-45D0-AAC6-731DE6A7B4A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{729F286D-32A1-45D0-AAC6-731DE6A7B4A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
