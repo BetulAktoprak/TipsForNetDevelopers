@@ -21,5 +21,5 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
         .HasIndex(e => e.Name)
         .IsUnique();
 }
-
+```
 ## <mark> 📌 Code First ile Index</mark>
