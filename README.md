@@ -23,3 +23,10 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 }
 ```
 ## <mark> 📌 Code First ile Index</mark>
+
+```csharp
+    .HasIndex()
+```
+*ifadesi, Entity Framework Core kullanılarak bir tablo sütununa indeks eklemek için kullanılan bir Fluent API yöntemidir. Bu, veritabanında daha hızlı sorgular ve daha iyi performans sağlamak için kullanılır.*
+
+## <mark> 📌 Pagination </mark>
