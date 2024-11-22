@@ -38,7 +38,7 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 - Uygulama aynı anda birden fazla işlemi yürütürken diğer iş parçacıkları kullanılabilir.
 - CPU ve bellek gibi sistem kaynaklarını daha verimli kullanır.
   
-**Task ve `Task<T>` :**
+**`Task` ve `Task<T>` :**
 
 * Task: Geri dönüşü olmayan bir asenkron işlemi temsil eder.
 * `Task<T>`: Bir değeri döndüren asenkron işlemi temsil eder.
