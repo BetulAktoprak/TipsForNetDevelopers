@@ -30,3 +30,16 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 *ifadesi, Entity Framework Core kullanılarak bir tablo sütununa indeks eklemek için kullanılan bir Fluent API yöntemidir. Bu, veritabanında daha hızlı sorgular ve daha iyi performans sağlamak için kullanılır.*
 
 ## <mark> 📌 Pagination </mark>
+
+## <mark> 📌 Asenkron Programlama </mark>
+
+*Bir uygulamanın uzun süreli veya gecikme potansiyeli olan işlemleri (örneğin, dosya okuma/yazma, veritabanı sorguları, api istekleri) uygulamanın ana iş parçacığını (main thread) bloke etmeden gerçekleştirmesine olanak tanıyan bir programlama modelidir. Bu model, aynı anda birden fazla işlemi idare edebilir ve kullanıcı deneyimini iyileştirir.*
+- UI uygulamalarında, uzun süren işlemler sırasında arayüzün donmasını engeller.
+- Uygulama aynı anda birden fazla işlemi yürütürken diğer iş parçacıkları kullanılabilir.
+- CPU ve bellek gibi sistem kaynaklarını daha verimli kullanır.
+  
+**Task ve Task<T>:**
+
+* Task: Geri dönüşü olmayan bir asenkron işlemi temsil eder.
+* Task<T>: Bir değeri döndüren asenkron işlemi temsil eder.
+
