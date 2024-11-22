@@ -43,3 +43,8 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 * Task: Geri dönüşü olmayan bir asenkron işlemi temsil eder.
 * `Task<T>`: Bir değeri döndüren asenkron işlemi temsil eder.
 
+## <mark> 📌 CancellationToken </mark>
+
+*C#'da asenkron işlemlerin veya uzun süre çalışan işlemlerin kontrollü bir şekilde iptal edilmesini sağlamak için kullanılan bir mekanizmadır*
+
+- CancellationToken: İptal isteğini taşıyan ve dinleyen nesnedir.
