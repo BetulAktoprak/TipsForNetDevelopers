@@ -80,6 +80,6 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 
 ```csharp
     public record class Login(
-    string Email,
-    string Password);
+        string Email,
+        string Password);
 ```
