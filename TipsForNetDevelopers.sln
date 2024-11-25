@@ -21,9 +21,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CancellationTokenWebApi", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ErrorLog", "ErrorLog\ErrorLog.csproj", "{A64281B1-83E4-4320-8101-F72A0CDD9966}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IQueryable", "IQueryable\IQueryable.csproj", "{30623F01-A51A-4234-B6F2-61365BBE7346}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IQueryable", "IQueryable\IQueryable.csproj", "{30623F01-A51A-4234-B6F2-61365BBE7346}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Record", "Record\Record.csproj", "{E2B7E0AE-5F81-4D2C-BCAF-4617E06CAF7C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Record", "Record\Record.csproj", "{E2B7E0AE-5F81-4D2C-BCAF-4617E06CAF7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformanceLogWebApi", "PerformanceLog\PerformanceLogWebApi.csproj", "{89FEB2B6-59E2-4C59-AE61-F30A4EFCC716}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{E2B7E0AE-5F81-4D2C-BCAF-4617E06CAF7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2B7E0AE-5F81-4D2C-BCAF-4617E06CAF7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2B7E0AE-5F81-4D2C-BCAF-4617E06CAF7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89FEB2B6-59E2-4C59-AE61-F30A4EFCC716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89FEB2B6-59E2-4C59-AE61-F30A4EFCC716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89FEB2B6-59E2-4C59-AE61-F30A4EFCC716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89FEB2B6-59E2-4C59-AE61-F30A4EFCC716}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
