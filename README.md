@@ -93,3 +93,13 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 
 🌟 Kod Güvenliği: Hatalı türetmelerin önüne geçilir.
 🎯 Tasarım Tutarlılığı: İstenmeyen değişikliklerin önüne geçilir.
+
+## <mark> 📌 Performance Log </mark>
+
+*Bir uygulamanın performansını izlemek ve optimize etmek için kullanılan bir araçtır. İşlem sürelerini, kaynak kullanımını ve performans sorunlarını kaydederek daha hızlı ve verimli bir uygulama geliştirilmesine olanak tanır.*
+
+#### 🔎 Kullanım Alanları
+- Web Uygulamaları: API çağrıları, sorgu süreleri ve yanıt sürelerini izlemek.
+- Masaüstü Uygulamaları: Uzun süren işlemleri veya kritik görevleri analiz etmek.
+- Veritabanı İşlemleri: SQL sorgularının performansını izlemek ve optimize etmek.
+- Dağıtık Sistemler: Mikroservisler arasındaki iletişim sürelerini ölçmek.
