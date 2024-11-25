@@ -68,3 +68,18 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 - 🌟 Gecikmeli Yürütme (Deferred Execution): Sorgu, ihtiyaç anında çalıştırılır.
 - ⚡ Performanslı Veri İşleme: Sorgular doğrudan veritabanına SQL olarak gönderilir.
 - 🔄 Dinamik Sorgu Bileşimi: Karmaşık işlemleri sadeleştirir.
+
+## <mark> 📌 Record </mark>
+
+*C#'ta record, immutable (değiştirilemez) ve değer tabanlı veri yapıları oluşturmak için kullanılan bir türdür. Veri transfer objeleri (DTO) ve veri modellerinde kod okunabilirliğini ve güvenliğini artırır.*
+
+✨ Avantajları
+- 🔒 Immutable Yapı: Veri değiştirilemez.
+- 🎯 Değer Eşitliği: Referans yerine değerler karşılaştırılır.
+- 🖋️ Daha Az Kod: ToString, Equals, ve GetHashCode otomatik oluşturulur.
+
+```csharp
+    public record class Login(
+    string Email,
+    string Password);
+```
