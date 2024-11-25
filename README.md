@@ -48,3 +48,15 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 *C#'da asenkron işlemlerin veya uzun süre çalışan işlemlerin kontrollü bir şekilde iptal edilmesini sağlamak için kullanılan bir mekanizmadır*
 
 - CancellationToken: İptal isteğini taşıyan ve dinleyen nesnedir.
+
+## <mark> 📌 Hata Loglama (ErrorLog) </mark>
+
+*Uygulama sırasında oluşan hataların detaylarını (örneğin hata mesajı, zaman damgası, yığın izi) kaydetmek için kullanılan bir sistemdir. Hatalar bir dosyaya, veritabanına veya merkezi bir loglama servisine kaydedilir. Sorun tespiti, performans optimizasyonu ve kullanıcı deneyimini iyileştirmek için kullanılır.*
+
+#### Hata Yakalama (Exception Handling):
+- try-catch blokları ile hatalar yakalanır.
+
+#### ErrorLog'da Kaydedilen Bilgiler
+- Hata Mesajı (Error Message): Hatanın kısa açıklaması.
+- Yığın İzi (Stack Trace): Hatanın nerede oluştuğunu gösteren kod izleri.
+- Zaman Damgası (Timestamp): Hatanın oluştuğu tarih ve saat.
