@@ -60,3 +60,11 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 - Hata Mesajı (Error Message): Hatanın kısa açıklaması.
 - Yığın İzi (Stack Trace): Hatanın nerede oluştuğunu gösteren kod izleri.
 - Zaman Damgası (Timestamp): Hatanın oluştuğu tarih ve saat.
+
+## <mark> 📌 IQueryable </mark>
+
+*Büyük veri kümeleri veya veritabanları ile çalışırken performanslı ve esnek sorgulama yapmayı sağlayan bir arayüzdür. Özellikle Entity Framework gibi ORM araçlarında, SQL sorgularını optimize ederek sadece gerekli veriyi almayı sağlar.*
+
+- 🌟 Gecikmeli Yürütme (Deferred Execution): Sorgu, ihtiyaç anında çalıştırılır.
+- ⚡ Performanslı Veri İşleme: Sorgular doğrudan veritabanına SQL olarak gönderilir.
+- 🔄 Dinamik Sorgu Bileşimi: Karmaşık işlemleri sadeleştirir.
