@@ -83,3 +83,13 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
         string Email,
         string Password);
 ```
+
+## <mark> 📌 Sealed </mark>
+
+*C#'ta sealed, bir sınıfın veya bir metodun türetilmesini veya üzerine yazılmasını engellemek için kullanılan bir anahtar kelimedir.*
+
+- Sınıflarda: Bir sınıfın başka bir sınıf tarafından inherit edilmesini önler.
+- Metotlarda: Bir metodun alt sınıflarda geçersiz kılınmasını engeller.
+
+🌟 Kod Güvenliği: Hatalı türetmelerin önüne geçilir.
+🎯 Tasarım Tutarlılığı: İstenmeyen değişikliklerin önüne geçilir.
