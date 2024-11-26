@@ -104,7 +104,7 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 - Veritabanı İşlemleri: SQL sorgularının performansını izlemek ve optimize etmek.
 - Dağıtık Sistemler: Mikroservisler arasındaki iletişim sürelerini ölçmek.
 
-## <mark> 📌 Performance Log </mark>
+## <mark> 📌 AsReadOnly Metodu </mark>
 
 *C#'ta AsReadOnly, bir koleksiyonu yalnızca okuma modunda kullanıma sunar. Bu yöntem, koleksiyonun yapısal değişikliklere (ekleme, silme) karşı korunmasını sağlar. Ancak, koleksiyon içindeki nesnelerin özellikleri değiştirilebilir.*
 
@@ -113,3 +113,10 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
     IReadOnlyList<Product> products = context.Products.ToList().AsReadOnly();
 ```
 
+## <mark> 📌 Any ve All Metotları </mark>
+
+*🔍 Bir koleksiyonda en az bir elemanın belirli bir koşulu sağlayıp sağlamadığını kontrol eder. Eğer koşulu sağlayan en az bir eleman varsa, true döner.*
+
+*🔍Bir koleksiyondaki tüm elemanların belirli bir koşulu sağlayıp sağlamadığını kontrol eder. Eğer tüm elemanlar koşulu sağlıyorsa, true döner.*
+
+⚠️ Bu metotlar, koleksiyonlar üzerinde hızlı ve etkili koşul kontrolleri yapmak için kullanılır. Any, koşulu sağlayan tek bir eleman ararken, All, tüm elemanların koşula uygun olup olmadığını kontrol eder.
