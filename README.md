@@ -125,9 +125,9 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 
 ### **Eager Loading**
 
-İlişkili tüm veriler **ilk sorguda** yüklenir.
+*İlişkili tüm veriler **ilk sorguda** yüklenir.*
   - Performansı büyük veri setlerinde optimize eder.
-  - 
+
 - **Ne Zaman Kullanılır?**
   - İlişkili tüm verilere hemen ihtiyaç varsa.
 
@@ -138,10 +138,11 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 ---
 
 ### **Lazy Loading**
-İlişkili veriler yalnızca **ihtiyaç duyulduğunda** yüklenir.
+
+*İlişkili veriler yalnızca **ihtiyaç duyulduğunda** yüklenir.*
   - Daha az bellek kullanımı.
   - Kullanılmayan veriler yüklenmez.
-  - 
+
 - **Ne Zaman Kullanılır?**
   - Verilerin tamamına her zaman ihtiyaç yoksa.
 
