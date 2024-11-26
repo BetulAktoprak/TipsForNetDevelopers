@@ -103,3 +103,13 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 - Masaüstü Uygulamaları: Uzun süren işlemleri veya kritik görevleri analiz etmek.
 - Veritabanı İşlemleri: SQL sorgularının performansını izlemek ve optimize etmek.
 - Dağıtık Sistemler: Mikroservisler arasındaki iletişim sürelerini ölçmek.
+
+## <mark> 📌 Performance Log </mark>
+
+*C#'ta AsReadOnly, bir koleksiyonu yalnızca okuma modunda kullanıma sunar. Bu yöntem, koleksiyonun yapısal değişikliklere (ekleme, silme) karşı korunmasını sağlar. Ancak, koleksiyon içindeki nesnelerin özellikleri değiştirilebilir.*
+
+🚀 Örnek Kullanım
+```csharp
+    IReadOnlyList<Product> products = context.Products.ToList().AsReadOnly();
+```
+
