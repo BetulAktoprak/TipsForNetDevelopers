@@ -161,4 +161,15 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 
 ---
 
+## <mark> 📌 Required Member </mark>
 
+*Belirli üyelerin atanmasını zorunlu kılan bir özelliktir. Bu, eksik veri kaynaklı hataları önler ve kodu daha güvenli hale getirir.*
+
+- Eksik Veri Hatalarını Önler: Zorunlu üyelerin atlanmasını engeller.
+- Güvenli Kod: Derleme aşamasında eksik atamaları kontrol eder.
+- Okunabilirlik: Gerekli üyeleri açıkça belirtir.
+
+**Örnek Kullanım:**
+```csharp
+  public required string Name { get; set; }
+```
