@@ -120,3 +120,44 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 *🔍Bir koleksiyondaki tüm elemanların belirli bir koşulu sağlayıp sağlamadığını kontrol eder. Eğer tüm elemanlar koşulu sağlıyorsa, true döner.*
 
 ⚠️ Bu metotlar, koleksiyonlar üzerinde hızlı ve etkili koşul kontrolleri yapmak için kullanılır. Any, koşulu sağlayan tek bir eleman ararken, All, tüm elemanların koşula uygun olup olmadığını kontrol eder.
+
+## <mark> 📌 Eager Loading / Lazy Loading </mark>
+
+### **Eager Loading**
+
+İlişkili tüm veriler **ilk sorguda** yüklenir.
+  - Performansı büyük veri setlerinde optimize eder.
+  - 
+- **Ne Zaman Kullanılır?**
+  - İlişkili tüm verilere hemen ihtiyaç varsa.
+
+**Örnek Kod:**
+```csharp
+    IList<Product> products2 = context.Products.Include(p => p.Category).ToList();
+```
+---
+
+### **Lazy Loading**
+İlişkili veriler yalnızca **ihtiyaç duyulduğunda** yüklenir.
+  - Daha az bellek kullanımı.
+  - Kullanılmayan veriler yüklenmez.
+  - 
+- **Ne Zaman Kullanılır?**
+  - Verilerin tamamına her zaman ihtiyaç yoksa.
+
+**Örnek Kod:**
+```csharp
+    IList<Product> products = context.Products.ToList();
+```
+---
+
+| **Özellik**         | **Eager Loading**              | **Lazy Loading**               |
+|-----------------------|--------------------------------|---------------------------------|
+| **Yükleme Zamanı**  | İlk sorguda                  | İhtiyaç duyulduğunda          |
+| **Sorgu Sayısı**     | Daha az (tek seferde)          | Daha fazla (parça parça)        |
+| **Performans**        | Çoklu veri çekiminde daha iyi  | Az veride daha iyi             |
+| **Kullanım Durumu** | Verilerin tümü gerekiyorsa      | Veri parça parça çekilecekse    |
+
+---
+
+
