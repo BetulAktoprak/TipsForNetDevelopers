@@ -173,3 +173,18 @@ protected override void OnModelCreating(ModelBuilder modelBuilder)
 ```csharp
   public required string Name { get; set; }
 ```
+
+## <mark> 📌 Authorization </mark>
+
+### JWT Authorization Nedir?
+*JWT (JSON Web Token), kullanıcı kimlik doğrulama ve yetkilendirme işlemleri için kullanılan güvenli bir token formatıdır. API'lerin güvenli bir şekilde iletişim kurmasını sağlar.*
+
+Nasıl Çalışır?
+- Kimlik Doğrulama:
+  - Kullanıcı, kullanıcı adı ve şifre ile sisteme giriş yapar.
+- Token Oluşturma:
+  - Başarılı girişten sonra, kullanıcıya bir JWT token döner.
+- Token Kullanımı:
+  - Kullanıcı, API isteklerinde bu token’ı gönderir.
+- Token Doğrulama:
+  - API, gelen token’ı doğrular ve kullanıcının erişim yetkisini kontrol eder.
