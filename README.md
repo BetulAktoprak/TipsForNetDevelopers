@@ -188,3 +188,27 @@ Nasıl Çalışır?
   - Kullanıcı, API isteklerinde bu token’ı gönderir.
 - Token Doğrulama:
   - API, gelen token’ı doğrular ve kullanıcının erişim yetkisini kontrol eder.
+
+## <mark> 📌 Health Checks </mark>
+
+*Health Checks, bir uygulamanın ve bağlı olduğu servislerin (ör. veritabanı, API) sağlıklı çalışıp çalışmadığını kontrol etmek için kullanılan bir mekanizmadır.*
+
+En basit şekilde genel bir Health Check yapmak istersek:
+
+```csharp
+  var builder = WebApplication.CreateBuilder(args);
+
+  // Health Checks Middleware
+  builder.Services.AddHealthChecks();
+
+  var app = builder.Build();
+
+  // Health Check endpoint
+  app.MapHealthChecks("/health");
+
+  app.Run();
+```
+
+Yukarıdaki örnek, uygulama için /health adında bir endpoint oluşturur. Bu endpoint’e yapılan HTTP GET isteği, uygulamanın genel durumunu kontrol eder ve sağlıklı/sağlıksız bilgisi döner.
+
+Eğer özel bir bağımlılığı (örneğin veritabanı bağlantısını) kontrol etmek istiyorsak, kendi Health Check sınıflarımızı yazmamız ve gerekli konfigürasyonları yapmamız gerekir.
